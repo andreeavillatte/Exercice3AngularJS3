@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html ng-app='myapp'>
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <title>Exercice 3</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script> -->
   </head>
 
 
@@ -12,14 +13,12 @@
 
           Dans le fichier html fourni, formater la date 2017-01-23 au format français (dd/MM/yyyy).</h1>
   
-   <div ng-controller="myCtrl">
-    <p>Après formater, 2017-01-23 devient: <strong>{{ item }}</strong></p>
+   <div>
+    <p> {{"2017-01-23" | date: "dd/MM/yyyy" }}</p>
     </div>
     </body>
 
   <body>
-
-    <script src="assets/js/angular.js"></script>
-    <script src="assets/js/script.js"></script>
+   <!-- <script src="assets/js/script.js"></script> -->
   </body>
 </html>
